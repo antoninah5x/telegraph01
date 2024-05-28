@@ -336,11 +336,6 @@ return new Response(html, { headers: { 'Content-Type': 'text/html;charset=UTF-8'
 // 接口配置对象，包含各平台的上传配置
   const interfaceConfigs = {
     tg: {
-      acceptTypes: 'image/gif,image/jpeg,image/jpg,image/png,video/mp4',
-      gifAndVideoMaxSize: 5 * 1024 * 1024, // GIF 和视频文件的最大大小为 5MB
-      otherMaxSize: 5 * 1024 * 1024, // 非 GIF 和视频文件的最大大小为 5MB
-      compressImage: true, //默认开启压缩
-        
       uploadURL: 'https://telegra.ph/upload',
       prepareFormData: async function(file, formData) {
         const uploadHeaders = {};
