@@ -1,5 +1,5 @@
 // worker-设置-触发器-添加自定义域
-const domain = 'example.com';
+const domain = 'jdk.pp.ua';
 
 // 监听 fetch 事件
 addEventListener('fetch', event => {
